@@ -27,7 +27,7 @@ class SQRServiceTest {
     @Test
     public void shouldMethodCheckOfNumbersForValueErrors(){
         SQRService sqrService=new SQRService();
-        int expected = 5;
+        int expected = 0;
         int lowerLimit = 0;
         int upperLimit = 9;
         int actual = sqrService.methodCheckOfNumbers(lowerLimit,upperLimit);
