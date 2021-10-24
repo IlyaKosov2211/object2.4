@@ -9,29 +9,31 @@ class SQRServiceTest {
     @Test
     public void shouldMethodCheckOfNumbers() {
         SQRService sqrService = new SQRService();
-        int expected = 5;
+        int expected = 3;
         int lowerLimit = 200;
         int upperLimit = 300;
         int actual = sqrService.methodCheckOfNumbers(lowerLimit, upperLimit);
         assertEquals(expected, actual);
     }
+
     @Test
-    public void shouldMethodCheckOfNumbersForExtremeValues(){
+    public void shouldMethodCheckOfNumbersForExtremeValues() {
         SQRService sqrService = new SQRService();
         int expected = 0;
         int lowerLimit = 10;
         int upperLimit = 99;
-        int actual =sqrService.methodCheckOfNumbers(lowerLimit, upperLimit);
+        int actual = sqrService.methodCheckOfNumbers(lowerLimit, upperLimit);
         assertEquals(expected, actual);
     }
+
     @Test
-    public void shouldMethodCheckOfNumbersForValueErrors(){
-        SQRService sqrService=new SQRService();
+    public void shouldMethodCheckOfNumbersForValueErrors() {
+        SQRService sqrService = new SQRService();
         int expected = 0;
         int lowerLimit = 0;
         int upperLimit = 9;
-        int actual = sqrService.methodCheckOfNumbers(lowerLimit,upperLimit);
-        assertEquals(expected,actual);
+        int actual = sqrService.methodCheckOfNumbers(lowerLimit, upperLimit);
+        assertEquals(expected, actual);
     }
 
 }
